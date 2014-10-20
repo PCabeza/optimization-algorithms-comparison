@@ -1,0 +1,6 @@
+gradient = ((4.0)*pow(x,3.0)*cos(x)-pow(x,4.0)*sin(x) , (4.0)*pow(y,3.0))
+
+hessian = 
+-(8.0)*pow(x,3.0)*sin(x)-pow(x,4.0)*cos(x)+(12.0)*pow(x,2.0)*cos(x)	0
+0	(12.0)*pow(y,2.0)
+
