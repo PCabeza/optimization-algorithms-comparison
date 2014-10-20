@@ -25,7 +25,8 @@ MAKE=make
 RM=rm -rf
 SRCEXT=cpp
 
-INCLUDE-DIRS=$(SRC) include-armadillo
+ARMADILLO-DIR= include-armadillo
+INCLUDE-DIRS=$(SRC) $(ARMADILLO-DIR)
 INCLUDE=$(addprefix -I,$(INCLUDE-DIRS))
 
 # add to CXXFLAGS if error -Wno-error=unused-result
