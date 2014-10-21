@@ -34,7 +34,20 @@ different options when compiling.
 
 ## Source Structure
 
+Each file holds much documentation from how it is implemented or how
+it should work. We used duck typing techniques (with meta-programming
+magic) in our testing framework to easy implementing the algorithms
+and tests.
+
 ### Algorithms
+
+[Algorthms][algorithms] are implemented as inline functions in header
+files. Each algorithm returns a [solution][solution] object that holds
+the information from the optimization process that we can use to
+evaluate the algorithm. Algorithms don't have a common interface,
+since we use
+[std::bind()](http://en.cppreference.com/w/cpp/utility/functional/bind)
+to rewrite the signature of the algorithms in the testing framework.
 
 ### Functions
 
@@ -53,11 +66,13 @@ computation) and plots from both the function and the derivative when
 it was possible. We used this information to prepare the tests and the
 report.
 
-The results from the tests are in [result_data][result_data]. There we
-hold the raw results output by the tests and the their graphs. The
-name contains some of the parameters used in the algorithm. For the
-graphs there is a *.R* file that includes the *plot.R* command used to
-plot it, since it is very dependent of the specific test and function.
+The results from the tests are stored inn
+[result_data][result_data]. There we hold the raw results outputted by
+the tests and the their graphs. The name of the data files contains
+some of the parameters used in the algorithm in order to trace the
+tests. For the graphs, there is a *.R* file that includes the
+[plot.R][plotR] command used to plot it, since it is very dependent of
+the specific test and function.
 
 Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a makefile to generate it, in the folder [report_latex][report_latex].
 
@@ -76,3 +91,8 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 [function_study]:</lemniscata/optimization-algorithms-comparison/src/master/doc/function_study>
 [result_data]: </lemniscata/optimization-algorithms-comparison/src/master/doc/result_data>
 [report_latex]: </lemniscata/optimization-algorithms-comparison/src/master/doc/report_latex>
+
+[plotR]: </lemniscata/optimization-algorithms-comparison/src/master/utilities/plot.R> "plot utility for surfaces for out tests"
+
+[algoritms]: </lemniscata/optimization-algorithms-comparison/src/master/src/algorithms>
+[solution]: </lemniscata/optimization-algorithms-comparison/src/master/src/solution.hpp>
