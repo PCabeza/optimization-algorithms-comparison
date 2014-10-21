@@ -71,8 +71,8 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 [newtorraphson]: <http://en.wikipedia.org/wiki/Newton's_method>
 [goldensection]: <http://en.wikipedia.org/wiki/Golden_section_search>
 
-[pdf_file]:</lemniscata/optimization-algorithms-comparison/master/doc/report.pdf> "report of the comparison"
-[documentation]:</lemniscata/optimization-algorithms-comparison/master/doc>
-[function_study]:</lemniscata/optimization-algorithms-comparison/master/doc/function_study>
-[result_data]: </lemniscata/optimization-algorithms-comparison/master/doc/result_data>
-[report_latex]: </lemniscata/optimization-algorithms-comparison/master/doc/report_latex>
+[pdf_file]:</lemniscata/optimization-algorithms-comparison/src/master/doc/report.pdf> "report of the comparison"
+[documentation]:</lemniscata/optimization-algorithms-comparison/src/master/doc>
+[function_study]:</lemniscata/optimization-algorithms-comparison/src/master/doc/function_study>
+[result_data]: </lemniscata/optimization-algorithms-comparison/src/master/doc/result_data>
+[report_latex]: </lemniscata/optimization-algorithms-comparison/src/master/doc/report_latex>
