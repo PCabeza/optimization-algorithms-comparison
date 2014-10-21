@@ -1,0 +1,14 @@
+testing rosenbrock algorithm with rosenbrock function
+point;eps;maxit;path;eval;grad;hess;diff
+(0,0);0.0005;10000;10000;1360002;0;0;-81.1848
+(10,-10);0.0005;10000;10000;1360002;0;0;1.20956e+06
+(0,10);0.0005;10000;10000;1360002;0;0;9272.37
+(-1,1);0.0005;10000;2;274;0;0;4
+
+
+testing simplex algorithm with rosenbrock function
+point;eps;alpha;beta;gamma;delta;s;path;eval;grad;hess;diff
+(0,0);0.0005;1;0.5;2;0.5;1;92;93;0;0;0.999836
+(10,-10);0.0005;1;0.5;2;0.5;1;132;133;0;0;1.21008e+06
+(0,10);0.0005;1;0.5;2;0.5;1;125;126;0;0;10001
+(-1,1);0.0005;1;0.5;2;0.5;1;135;136;0;0;3.99974

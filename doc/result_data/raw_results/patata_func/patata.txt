@@ -1,0 +1,12 @@
+testing rosenbrock algorithm with patata function
+point;eps;maxit;path;eval;grad;hess;diff
+(0.001,10);0.0005;10000;7;954;0;0;10.2313
+(10,10);0.0005;10000;10000;1360002;0;0;10.2107
+(10,0);0.0005;10000;10000;1360002;0;0;0.23134
+
+
+testing steepest descent algorithm with patata function
+point;eps;path;eval;grad;hess;diff
+(0.001,10);0.0005;1001;67002;1001;0;10.2313
+(10,10);0.0005;503;33636;503;0;-nan
+(10,0);0.0005;76;5027;76;0;-nan
