@@ -1,7 +1,5 @@
-# Optimization algorithms comparison
+# Optimization algorithms compariso
 Authors: Pablo Cabeza García & Paco Criado Gallart
-
----
 
 This project is from the subject *optimization*. The aim of it is to
 implement and compare multivariate optimization algorithms and see how
@@ -94,5 +92,5 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 
 [plotR]: </lemniscata/optimization-algorithms-comparison/src/master/utilities/plot.R> "plot utility for surfaces for out tests"
 
-[algoritms]: </lemniscata/optimization-algorithms-comparison/src/master/src/algorithms>
+[algorithms]: </lemniscata/optimization-algorithms-comparison/src/master/src/algorithms>
 [solution]: </lemniscata/optimization-algorithms-comparison/src/master/src/solution.hpp>
