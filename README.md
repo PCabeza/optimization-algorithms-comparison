@@ -49,6 +49,25 @@ to rewrite the signature of the algorithms in the testing framework.
 
 ### Functions
 
+For the [functions][functions] we used a common interface
+[function.hpp][function] that all surfaces must inherit from to be
+used in our testing framework.
+
+We have implemented some known functions:
+
+- [Rosenbrock][frosenbrock]
+- [Gregory-Karney][fgregory]
+- [Rastrigin][frastrigin]
+
+And we designed other two functions in order to test some aspects of
+the algorithms:
+
+- [Patata][fpatata]: Similar to Rastrigin in the aspect that it has many local
+  minimums, but just one global minimum.
+  
+- [Meseta][fmeseta]: It has local minimums as layers, but no global minimum. With
+  it we wanted to how far the algorithms would go.
+
 ### Testing framework
 
 ## Documentation and result structure
@@ -84,6 +103,12 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 [newtorraphson]: <http://en.wikipedia.org/wiki/Newton's_method>
 [goldensection]: <http://en.wikipedia.org/wiki/Golden_section_search>
 
+[frosenbrock]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/rosenbrock.hpp>
+[fgregory]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/gregory_karney.hpp>
+[frastrigin]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/rastrigin.hpp>
+[fpatata]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/patata.hpp>
+[fmeseta]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/valley.hpp>
+
 [pdf_file]:</lemniscata/optimization-algorithms-comparison/src/master/doc/report.pdf> "report of the comparison"
 [documentation]:</lemniscata/optimization-algorithms-comparison/src/master/doc>
 [function_study]:</lemniscata/optimization-algorithms-comparison/src/master/doc/function_study>
@@ -92,5 +117,8 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 
 [plotR]: </lemniscata/optimization-algorithms-comparison/src/master/utilities/plot.R> "plot utility for surfaces for out tests"
 
+[function]: </lemniscata/optimization-algorithms-comparison/src/master/src/function.hpp>
+
 [algorithms]: </lemniscata/optimization-algorithms-comparison/src/master/src/algorithms>
 [solution]: </lemniscata/optimization-algorithms-comparison/src/master/src/solution.hpp>
+[functions]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples>
