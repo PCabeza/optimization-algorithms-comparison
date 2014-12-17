@@ -70,6 +70,69 @@ the algorithms:
 
 ### Testing framework
 
+The testing framework consists of two files:
+
+- [analysis.hpp][analysis]: holds the logic of testing the algorithms
+  against a function and a set of initial points.
+
+- [analysisData.hpp][analysisData]: auxiliary class and functions to help `analysis()`
+
+#### How to use ####
+
+A simple guide to create a test would be:
+
+1. Create an instance of the class `analysis`, it makes use of
+   tamplates for types, so an utility function `make_analysis()` can
+   be used. The best way to use it is:
+
+		auto instance = make_analysis(algorithm);
+2. If the algorithms needs extra parameters like epsilon,
+   maxit,... you need to create en instance of `analysisData`. To
+   create it you use the function:
+   
+		analysisData<...> make_adata(par1,string name1, par2, string name2,...);
+
+	The order of parameters in `make_adata` is the same as in the
+	algorthm. Parameter `nameN` is there to name columns in the csv
+	output.
+
+3. Finally, use `analize()` to test the algorithm. Its prototype is: 
+
+		void analyze( ostream o , 
+			function f ,
+			container c ,
+			analysisData<...> d ,
+			bool header
+		);
+
+
+	- `header` indicates whether to print or not a first row with the
+      name of columns. It is used to chain different tests in the same
+      csv.
+
+	- `container c` is an iterable container of points, for example, a
+      vector.
+
+#### Note about algorithm
+
+The `algorithm` in the first points must be of the form `solution
+algorithm(const function& f, mat p, ...)`.
+
+- Extra parameters can be any that the algorithm needs, for example
+  epsilon, maxit...
+
+- If algorithm doesn't look like this you can use `std::bind()` to
+  reorder parameters. For example:
+
+		string foo(int,double,vector<int>);
+		auto fun=std::bind(foo, _2 , 0.5 , _1);
+		fun(vector<int>() , 5);
+
+	Is equivalent to the call `foo( 5 , 0.5 , vector<int>() )`
+
+
+
+
 ## Documentation and result structure
 
 The folder [doc][documentation] contains all the documents we have
@@ -122,3 +185,6 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 [algorithms]: </lemniscata/optimization-algorithms-comparison/src/master/src/algorithms>
 [solution]: </lemniscata/optimization-algorithms-comparison/src/master/src/solution.hpp>
 [functions]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples>
+
+[analysis]: </lemniscata/optimization-algorithms-comparison/src/master/src/analysis.hpp>
+[analysisData]: </lemniscata/optimization-algorithms-comparison/src/master/src/analysisData.hpp>
