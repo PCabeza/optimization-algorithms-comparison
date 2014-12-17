@@ -1,4 +1,4 @@
-# Optimization algorithms compariso
+# Optimization algorithms comparison
 Authors: Pablo Cabeza García & Paco Criado Gallart
 
 This project is from the subject *optimization*. The aim of it is to
