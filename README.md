@@ -166,25 +166,25 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 [newtorraphson]: <http://en.wikipedia.org/wiki/Newton's_method>
 [goldensection]: <http://en.wikipedia.org/wiki/Golden_section_search>
 
-[frosenbrock]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/rosenbrock.hpp>
-[fgregory]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/gregory_karney.hpp>
-[frastrigin]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/rastrigin.hpp>
-[fpatata]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/patata.hpp>
-[fmeseta]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples/valley.hpp>
+[frosenbrock]: </src/master/src/examples/rosenbrock.hpp>
+[fgregory]: </src/master/src/examples/gregory_karney.hpp>
+[frastrigin]: </src/master/src/examples/rastrigin.hpp>
+[fpatata]: </src/master/src/examples/patata.hpp>
+[fmeseta]: </src/master/src/examples/valley.hpp>
 
-[pdf_file]:</lemniscata/optimization-algorithms-comparison/src/master/doc/report.pdf> "report of the comparison"
-[documentation]:</lemniscata/optimization-algorithms-comparison/src/master/doc>
-[function_study]:</lemniscata/optimization-algorithms-comparison/src/master/doc/function_study>
-[result_data]: </lemniscata/optimization-algorithms-comparison/src/master/doc/result_data>
-[report_latex]: </lemniscata/optimization-algorithms-comparison/src/master/doc/report_latex>
+[pdf_file]:</src/master/doc/report.pdf> "report of the comparison"
+[documentation]:</src/master/doc>
+[function_study]:</src/master/doc/function_study>
+[result_data]: </src/master/doc/result_data>
+[report_latex]: </src/master/doc/report_latex>
 
-[plotR]: </lemniscata/optimization-algorithms-comparison/src/master/utilities/plot.R> "plot utility for surfaces for out tests"
+[plotR]: </src/master/utilities/plot.R> "plot utility for surfaces for out tests"
 
-[function]: </lemniscata/optimization-algorithms-comparison/src/master/src/function.hpp>
+[function]: </src/master/src/function.hpp>
 
-[algorithms]: </lemniscata/optimization-algorithms-comparison/src/master/src/algorithms>
-[solution]: </lemniscata/optimization-algorithms-comparison/src/master/src/solution.hpp>
-[functions]: </lemniscata/optimization-algorithms-comparison/src/master/src/examples>
+[algorithms]: </src/master/src/algorithms>
+[solution]: </src/master/src/solution.hpp>
+[functions]: </src/master/src/examples>
 
-[analysis]: </lemniscata/optimization-algorithms-comparison/src/master/src/analysis.hpp>
-[analysisData]: </lemniscata/optimization-algorithms-comparison/src/master/src/analysisData.hpp>
+[analysis]: </src/master/src/analysis.hpp>
+[analysisData]: </src/master/src/analysisData.hpp>
