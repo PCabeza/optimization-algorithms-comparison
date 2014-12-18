@@ -166,25 +166,25 @@ Lastly, we have the *LaTeX* used to generate the [report][pdf_file], with a make
 [newtorraphson]: <http://en.wikipedia.org/wiki/Newton's_method>
 [goldensection]: <http://en.wikipedia.org/wiki/Golden_section_search>
 
-[frosenbrock]: </src/master/src/examples/rosenbrock.hpp>
-[fgregory]: </src/master/src/examples/gregory_karney.hpp>
-[frastrigin]: </src/master/src/examples/rastrigin.hpp>
-[fpatata]: </src/master/src/examples/patata.hpp>
-[fmeseta]: </src/master/src/examples/valley.hpp>
+[frosenbrock]: </src/examples/rosenbrock.hpp>
+[fgregory]: </src/examples/gregory_karney.hpp>
+[frastrigin]: </src/examples/rastrigin.hpp>
+[fpatata]: </src/examples/patata.hpp>
+[fmeseta]: </src/examples/valley.hpp>
 
-[pdf_file]:</src/master/doc/report.pdf> "report of the comparison"
-[documentation]:</src/master/doc>
-[function_study]:</src/master/doc/function_study>
-[result_data]: </src/master/doc/result_data>
-[report_latex]: </src/master/doc/report_latex>
+[pdf_file]:</doc/report.pdf> "report of the comparison"
+[documentation]:</doc>
+[function_study]:</doc/function_study>
+[result_data]: </doc/result_data>
+[report_latex]: </doc/report_latex>
 
-[plotR]: </src/master/utilities/plot.R> "plot utility for surfaces for out tests"
+[plotR]: </utilities/plot.R> "plot utility for surfaces for out tests"
 
-[function]: </src/master/src/function.hpp>
+[function]: </src/function.hpp>
 
-[algorithms]: </src/master/src/algorithms>
-[solution]: </src/master/src/solution.hpp>
-[functions]: </src/master/src/examples>
+[algorithms]: </src/algorithms>
+[solution]: </src/solution.hpp>
+[functions]: </src/examples>
 
-[analysis]: </src/master/src/analysis.hpp>
-[analysisData]: </src/master/src/analysisData.hpp>
+[analysis]: </src/analysis.hpp>
+[analysisData]: </src/analysisData.hpp>
